@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import os
 import sys
+import platform
 import re
 from subprocess import check_call, check_output
 from pathlib import Path
@@ -68,3 +69,8 @@ class SSHKey(object):
         return  self.key_dir() + '/id_rsa'
 
 
+def package_extension():
+     # will deal with other linux distro later
+     return platform.linux_distribution()[2] + "_amd64.deb" 
+
+# get dali ip with configgen -env /etc/HPCCSystems/environmen.xml -listall | grep DaliServer | cut -d',' -f2

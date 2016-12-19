@@ -28,6 +28,7 @@ class HPCCEnv:
    HPCC_HOME        = '/opt/HPCCSystems'
    HPCC_CLUSTER_DIR = JUJU_HPCC_DIR + '/cluster'
    CLUSTER_IPS_DIR  = HPCC_CLUSTER_DIR +  '/ips'
+   CLUSTER_CURRENT_IPS_DIR  = HPCC_CLUSTER_DIR +  '/current_ips'
 
    CLUSTER_NODE_TYPES = ['dali',
                          'sasha', 
