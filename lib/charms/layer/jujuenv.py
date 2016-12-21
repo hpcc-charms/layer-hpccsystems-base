@@ -41,7 +41,8 @@ class JujuEnv:
              'RESTARTING'      : 'restarting',
              'STARTED'         : 'started',
              'STOPPED'         : 'stopped',
-             'PLUGIN_JOINED'   : 'plugin(s) is/(are) joined',
+             'INSTALL_PLUGIN'  : 'install plugins',
+             'PLUGIN_AVAILABLE': 'plugins available',
    }
 
 
